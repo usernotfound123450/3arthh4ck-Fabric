@@ -69,6 +69,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 // TODO: more mine stuff!
 // TODO: SmartRange for OBBY!!!
 public class AutoCrystal extends Module
+
+    // DEBUG: Logging crystal actions
+    private void debugLog(String message) {
+        Managers.LOG.info("[AutoCrystal] " + message);
+    }
 {
     public static final PositionHistoryHelper POSITION_HISTORY =
         new PositionHistoryHelper();
